@@ -1,0 +1,31 @@
+<html>
+ <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+   <body>
+      <H1>My Personal Diary!!!</H1>
+      <form action = "http://localhost:5000/find-all-notes" method = "GET">
+          <p class="font-weight-bold">Find All Notes</p>
+         <button type="submit" class="btn btn-success">Find All </button>
+        </form>
+
+
+      <form action = "http://localhost:5000/insert-note" method = "POST">
+        <p class="font-weight-bold">Insert your note</p>
+        <p>Title <input type = "text" name = "title" /></p>
+
+        <div class="form-group">
+          <label for="comment">Note:</label>
+          <textarea class="form-control" rows="5" name="note"></textarea>
+        </div>
+        <!-- <p>Note <input type = "text" name = "note" /></p> -->
+        <p>Date <input type = "text" name = "date" /></p>
+         <button type="submit" class="btn btn-info">Insert</button>
+      </form>
+
+      <form action = "http://localhost:5000/delete-all-notes" method = "POST">
+          <p class="font-weight-bold">Delete All Notes</p>
+          <button type="submit" class="btn btn-danger">Delete All</button>
+      </form>
+      </body>
+      </html>
